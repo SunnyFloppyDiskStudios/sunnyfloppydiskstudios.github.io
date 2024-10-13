@@ -1,0 +1,126 @@
+body {
+    background-color: #eeeeee;
+}
+
+
+
+/* Text */
+
+@font-face {
+  font-family: Fredoka;
+  src: url("fonts/Fredoka One.ttf")
+}
+
+mark {
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: Fredoka;
+
+    text-align: center;
+    font-style: normal;
+
+    font-size: 45px;
+    font-weight: 600;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: pre-wrap
+}
+
+h2 {
+    font-family: Fredoka;
+
+    text-align: center;
+    font-style: normal;
+
+    font-size: 40px;
+    font-weight: 600;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: pre-wrap
+}
+
+h3 {
+    font-family: Fredoka;
+
+    text-align: center;
+    font-style: normal;
+
+    font-size: 35px;
+    font-weight: 600;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: pre-wrap
+
+}
+
+h4 {
+    font-family: Fredoka;
+
+    text-align: center;
+    font-style: normal;
+
+    font-size: 25px;
+    font-weight: 600;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: pre-wrap
+
+}
+
+p {
+    font-family: Fredoka;
+    font-weight: 600;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    word-wrap: break-word;
+    white-space: pre-wrap
+}
+
+a {
+    font-family: Fredoka;
+    font-weight: 600;
+    font-size: 25px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+
+    transition: font-size 0.5s;
+}
+
+  a:hover {
+      font-size: 32px;
+  }
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    h3 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    h4 {
+        font-size: 20px;
+    }
+}
