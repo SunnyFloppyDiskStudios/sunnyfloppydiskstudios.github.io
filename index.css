@@ -124,3 +124,40 @@ a {
         font-size: 20px;
     }
 }
+
+.navbar{
+    background-color: hsl(215, 100%, 9%);
+    border-radius: 15px;
+
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+.navbar ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: inline-flex;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: hsl(221, 100%, 5%);
+    border-radius: 15px;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    padding: 0 !important;
+    width: 100%;
+    margin: 0 0 1rem;
+}
