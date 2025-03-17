@@ -2,6 +2,10 @@ body {
     background-color: #eeeeee;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
 
 
 /* Text */
@@ -100,7 +104,7 @@ a {
       font-size: 32px;
   }
 
-
+/*  Media */
 @media (max-width: 600px) {
     h1 {
         font-size: 40px;
@@ -125,6 +129,8 @@ a {
     }
 }
 
+
+/* Navbar */
 .navbar{
     background-color: hsl(215, 100%, 9%);
     border-radius: 15px;
@@ -154,10 +160,16 @@ a {
     border-radius: 15px;
 }
 
-.dropdownContent {
-    display: none;
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner-left {
     position: absolute;
-    padding: 0 !important;
-    width: 100%;
-    margin: 0 0 1rem;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
 }
