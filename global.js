@@ -1,20 +1,13 @@
-const html = document.querySelector("html");
+window.addEventListener("scroll", () => {
+    const halfwayPoint = document.documentElement.scrollHeight / 2;
 
-html.onwheel = (e) => {
-    if (html.scrollHeight > html.clientHeight) {
-        if (e.wheelDeltaY < 0) {
-            document.body.style.backgroundColor = '#6b5fff';
-        } else if (e.wheelDeltaY > 0) {
-            document.body.style.backgroundColor = '#00122c';
-        }
+    if (window.scrollY + window.innerHeight / 2 < halfwayPoint) {
+        document.body.style.backgroundColor = '#00122c';
     } else {
-        if (e.wheelDeltaY < 0) {
-            document.body.style.backgroundColor = '#6b5fff';
-        } else if (e.wheelDeltaY > 0) {
-            document.body.style.backgroundColor = '#00122c';
-        }
+        document.body.style.backgroundColor = '#6b5fff';
     }
-}
+})
+
 
 function topFunction() {
     window.scrollTo({ top: 0, behavior: "smooth" });
