@@ -67,6 +67,7 @@ a {
     white-space: pre-wrap;
 
     transition: font-size 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 a:hover {
@@ -106,23 +107,31 @@ a:hover {
     transform: scale(1.35);
 }
 
-.navbar{
+.navbar {
     background-color: #00122c;
 
     position: fixed;
     width: 100%;
     top: 0;
     overflow: hidden;
+
+    z-index: 10000000000000;
 }
 
-.navbar ul{
+.navbar ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: inline-flex;
+    display: flex;
+
+    list-style: none;
 }
 
-.navbar a{
+.nav-left {
+    margin-left: auto;
+}
+
+.navbar a {
     color: white;
     text-decoration: none;
     padding: 15px;
@@ -163,11 +172,40 @@ a:hover {
     color: white;
 }
 
+#footer-logo {
+    max-width: 25px;
+    padding: 10px;
+}
+
+#socials {
+    padding: 10px;
+}
+
+#socials img {
+    max-width: 25px;
+}
+
+.card-info {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    align-self: start;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+}
+
+.card-info img {
+    width: 100%;
+    max-width: 20px;
+    padding-right: 2px;
+}
+
 .card {
     display: grid;
     grid:
-    "image-span content-span" 500px
-    / 250px 3px;
+    "image-span content-span" 250px
+    / 250px 280px;
     gap: 8px;
     border-radius: 35px;
     background-color: #eeeeee;
@@ -175,7 +213,36 @@ a:hover {
     width: 50%;
     height: 250px;
     padding: 10px;
+
+    align-items: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6, .card p {
+    text-align: left;
+    margin: 0;
 }
 
 .card-image-span { grid-area: image-span; }
+.card-image-span img {
+    width: 100%;
+    border-radius: 30px;
+}
+
 .card-content-span { grid-area: content-span; }
+.card-content-span p {
+    font-size: 20px;
+}
+.card-content-span h2 {
+    font-weight: 800;
+}
+
+div.gap {
+    padding-top: 60px;
+}
