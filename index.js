@@ -15,3 +15,10 @@ html.onwheel = (e) => {
         }
     }
 }
+
+
+let homeButton = document.getElementById("homeButton");
+
+function topFunction() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}

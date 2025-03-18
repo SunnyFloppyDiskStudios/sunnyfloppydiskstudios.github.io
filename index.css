@@ -93,11 +93,11 @@ a:hover {
 }
 
 
-.footer img {
+.footer a img {
     transition: transform 0.3s ease-in-out;
 }
 
-.footer img:hover {
+.footer a img:hover {
     transform: scale(1.35);
 }
 
