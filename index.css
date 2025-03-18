@@ -162,3 +162,20 @@ a:hover {
 .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6, .footer p {
     color: white;
 }
+
+.card {
+    display: grid;
+    grid:
+    "image-span content-span" 500px
+    / 250px 3px;
+    gap: 8px;
+    border-radius: 35px;
+    background-color: #eeeeee;
+
+    width: 50%;
+    height: 250px;
+    padding: 10px;
+}
+
+.card-image-span { grid-area: image-span; }
+.card-content-span { grid-area: content-span; }
