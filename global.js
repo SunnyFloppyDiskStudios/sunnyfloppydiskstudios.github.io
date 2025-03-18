@@ -1,10 +1,11 @@
+const html = document.querySelector("html");
 window.addEventListener("scroll", () => {
     const halfwayPoint = document.documentElement.scrollHeight / 2;
 
     if (window.scrollY + window.innerHeight / 2 < halfwayPoint) {
-        document.body.style.backgroundColor = '#00122c';
+        html.style.backgroundColor = '#00122c';
     } else {
-        document.body.style.backgroundColor = '#6b5fff';
+        html.style.backgroundColor = '#6b5fff';
     }
 })
 
