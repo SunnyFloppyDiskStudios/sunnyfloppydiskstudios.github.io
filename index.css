@@ -19,16 +19,21 @@ html {
   src: url("fonts/Fredoka One.ttf")
 }
 
+@font-face {
+    font-family: Rubik, sans-serif;
+    src: url("fonts/Rubik.ttf")
+}
+
 mark {
     border-radius: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Fredoka, sans-serif;
+    font-family: Rubik, sans-serif;
     text-align: center;
     font-style: normal;
 
-    font-weight: 600;
+    font-weight: 500;
 
     padding-left: 10px;
     padding-right: 10px;
