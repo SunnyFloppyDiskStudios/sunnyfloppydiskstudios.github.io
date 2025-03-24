@@ -18,4 +18,14 @@
     .navbar a {
         font-size: 20px;
     }
+
+    .popup {
+        width: 90%;
+        height: auto;
+        border-radius: 30px;
+    }
+
+    .popup-overlay {
+        opacity: 0.8;
+    }
 }
