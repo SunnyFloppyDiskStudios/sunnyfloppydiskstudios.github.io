@@ -1,0 +1,3 @@
+function infoCard(applet) {
+    
+}

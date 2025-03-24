@@ -72,31 +72,6 @@ a:hover {
     font-size: 32px;
 }
 
-@media (max-width: 600px) {
-    h1 {
-        font-size: 40px;
-    }
-}
-
-@media (max-width: 600px) {
-    h2 {
-        font-size: 35px;
-    }
-}
-
-@media (max-width: 600px) {
-    h3 {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 600px) {
-    h4 {
-        font-size: 20px;
-    }
-}
-
-
 .footer a img {
     transition: transform 0.3s ease-in-out;
 }
@@ -202,8 +177,8 @@ a:hover {
 .card {
     display: grid;
     grid:
-    "image-span content-span" 250px
-    / 250px calc(100% - 250px);
+        "image-span content-span" 250px
+        / 250px calc(100% - 250px);
     gap: 8px;
     border-radius: 35px;
     background-color: #eeeeee;
@@ -213,7 +188,9 @@ a:hover {
     padding: 10px;
 
     align-items: center;
+    cursor: pointer;
 }
+
 
 .cards {
     display: grid;
@@ -318,6 +295,4 @@ div.gap {
     transition-delay: 0s, 0s, 0.25s;
     visibility: hidden;
 }
-
-
 
