@@ -17,11 +17,16 @@ function infoCard(content) {
     let overlay = document.getElementById("popup-overlay");
 
     popup.innerHTML = `
-        <button class="close-btn" onclick="viewCard('')">Close</button>
+        <button class="close-btn" onclick="viewCard('')">CLOSE</button>
         <div class="popup-content">${content}</div>
     `;
+
     popup.style.display = "block";
     overlay.style.display = "block";
+    setTimeout(() => {
+        popup.classList.add("show");
+        overlay.classList.add("show");
+    }, 10);
 
     document.body.classList.add("no-scroll");
 }
@@ -33,10 +38,13 @@ function viewCard(appletFile) {
     if (appletFile) {
         infoCard(appletFile);
     } else {
-        popup.style.display = "none";
-        overlay.style.display = "none";
-
-        document.body.classList.remove("no-scroll");
+        popup.classList.remove("show");
+        overlay.classList.remove("show");
+        setTimeout(() => {
+            popup.style.display = "none";
+            overlay.style.display = "none";
+            document.body.classList.remove("no-scroll");
+        }, 300);
     }
 }
 
@@ -46,3 +54,4 @@ function displayCard(appletName) {
     overlay.style.display = "block";
     document.body.classList.add("no-scroll");
 }
+
