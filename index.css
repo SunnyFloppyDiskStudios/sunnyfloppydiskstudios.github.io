@@ -113,7 +113,7 @@ a:hover {
     top: 0;
     overflow: hidden;
 
-    z-index: 10000000000000;
+    z-index: 100;
 }
 
 .navbar ul {
