@@ -24,8 +24,4 @@
         height: auto;
         border-radius: 30px;
     }
-
-    .popup-overlay {
-        opacity: 0.8;
-    }
 }
