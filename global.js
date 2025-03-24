@@ -12,6 +12,7 @@ function switchBG() {
     } else {
         html.style.backgroundColor = '#6b5fff';
     }
+
 }
 
 window.addEventListener("scroll", switchBG);
