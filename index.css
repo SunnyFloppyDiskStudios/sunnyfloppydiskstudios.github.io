@@ -315,7 +315,7 @@ div.gap {
 .tooltip:not(:hover) .tooltipimg {
     transform: translateX(-50%) scale(0.2);
     opacity: 0;
-    transition-delay: 0s, 0s, 0.2s; /* Delay visibility hiding after animation */
+    transition-delay: 0s, 0s, 0.2s;
     visibility: hidden;
 }
 
