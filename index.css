@@ -296,3 +296,59 @@ div.gap {
     visibility: hidden;
 }
 
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFFFFF22;
+    backdrop-filter: blur(10px);
+    z-index: 149;
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: none;
+    z-index: 150;
+    overflow-y: auto;
+    border-radius: 30px;
+}
+
+.close-btn {
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+}
+
+.popup-content {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.popup-content p {
+    margin-bottom: 10px;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+
